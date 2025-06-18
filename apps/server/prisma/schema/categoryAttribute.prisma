@@ -1,0 +1,11 @@
+model CategoryAttribute {
+  id   String  @id @default(uuid())
+  name String
+  type String
+  unit String?
+
+  categoryId String   @map("category_id")
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  @@map("category_attributes")
+}
