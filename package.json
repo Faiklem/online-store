@@ -1,0 +1,13 @@
+{
+	"name": "online-store",
+	"version": "1.0.0",
+	"author": "Faiklem",
+	"scripts": {
+		"dev:client": "cd apps/client && yarn dev",
+		"dev:server": "cd apps/server && yarn start:dev",
+		"dev": "concurrently \"yarn dev:client\" \"yarn dev:server\""
+	},
+	"dependencies": {
+		"concurrently": "^9.1.2"
+	}
+}
