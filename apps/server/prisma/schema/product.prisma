@@ -3,6 +3,7 @@ model Product {
   name        String
   price       Float
   description String
+  image       String
   specs       Json
 
   categoryId String   @map("category_id")
